@@ -1,0 +1,48 @@
+/* ═══════════════════════════════════════════════════════
+   TEMA B — BOLD INDUSTRIAL
+   Azul escuro + vermelho + tipografia condensada caps
+   Ativa via: ?theme=b
+═══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap');
+
+:root {
+  --color-bg:                    #0f172a;
+  --color-bg-alt:                #1e293b;
+  --color-bg-surface:            #1e293b;
+  --color-bg-surface-hover:      rgba(239, 68, 68, 0.06);
+  --color-bg-surface-highlight:  rgba(239, 68, 68, 0.09);
+  --color-bg-preview:            rgba(239, 68, 68, 0.05);
+  --color-accent:                #ef4444;
+  --color-accent-hover:          #b91c1c;
+  --color-accent-focus:          rgba(239, 68, 68, 0.12);
+  --color-text:                  #f8fafc;
+  --color-text-muted:            #94a3b8;
+  --color-border:                #334155;
+  --color-border-highlight:      rgba(239, 68, 68, 0.4);
+  --color-border-hover:          rgba(239, 68, 68, 0.4);
+  --color-border-preview:        rgba(239, 68, 68, 0.15);
+  --color-error:                 #f87171;
+  --font-display:                'Barlow Condensed', Arial Narrow, sans-serif;
+  --font-body:                   'Barlow', system-ui, sans-serif;
+  --font-label:                  'Barlow Condensed', Arial Narrow, sans-serif;
+  --radius:                      2px;
+}
+
+/* Personalidade industrial: caps nos headings e botões */
+.hero__headline em   { font-style: normal; text-transform: uppercase; letter-spacing: -0.02em; }
+.section-title       { text-transform: uppercase; letter-spacing: -0.01em; }
+.service-card__name  { text-transform: uppercase; font-size: 1.2rem; letter-spacing: 0.02em; font-family: var(--font-display); }
+.cta-final__headline { text-transform: uppercase; letter-spacing: -0.02em; }
+.btn--primary        { text-transform: uppercase; letter-spacing: 0.08em; }
+.nav__brand          { text-transform: uppercase; letter-spacing: 0.1em; font-family: var(--font-label); }
+
+/* Linha de acento no topo do hero */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), #f97316);
+  z-index: 10;
+}

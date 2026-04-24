@@ -1,0 +1,30 @@
+/* ═══════════════════════════════════════════════════════
+   TEMA A — LUXURY DARK
+   Preto quente + dourado + tipografia editorial serif
+   Ativa via: ?theme=a  (padrão quando sem param)
+═══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap');
+
+:root {
+  --color-bg:                    #0a0807;
+  --color-bg-alt:                #141210;
+  --color-bg-surface:            #1a1816;
+  --color-bg-surface-hover:      rgba(200, 169, 110, 0.05);
+  --color-bg-surface-highlight:  rgba(200, 169, 110, 0.08);
+  --color-bg-preview:            rgba(200, 169, 110, 0.05);
+  --color-accent:                #c8a96e;
+  --color-accent-hover:          #9a7a4a;
+  --color-accent-focus:          rgba(200, 169, 110, 0.12);
+  --color-text:                  #f5f0e8;
+  --color-text-muted:            #8a8480;
+  --color-border:                #2a2724;
+  --color-border-highlight:      rgba(200, 169, 110, 0.35);
+  --color-border-hover:          rgba(200, 169, 110, 0.3);
+  --color-border-preview:        rgba(200, 169, 110, 0.15);
+  --color-error:                 #e05555;
+  --font-display:                'Playfair Display', Georgia, serif;
+  --font-body:                   'DM Sans', system-ui, sans-serif;
+  --font-label:                  'Bebas Neue', Arial Narrow, sans-serif;
+  --radius:                      4px;
+}
