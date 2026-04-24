@@ -1,38 +1,38 @@
 /* ═══════════════════════════════════════════════════════
    TEMA C — CLEAN MINIMAL
-   Creased Khaki · Emerald Green · Wasabi · Egyptian Earth · Noir de Vigne
+   Emerald · Egyptian Earth · Dourado · Creme
    Ativa via: ?theme=c
 ═══════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* Creased Khaki — backgrounds quentes e terrosos */
-  --color-bg:                    #f5eddf;
-  --color-bg-alt:                #ede3cf;
-  --color-bg-surface:            #fdf8f0;
-  --color-bg-surface-hover:      rgba(18, 98, 55, 0.04);
-  --color-bg-surface-highlight:  rgba(18, 98, 55, 0.07);
-  --color-bg-preview:            rgba(18, 98, 55, 0.04);
+  /* Fundo emerald — verde profundo como base */
+  --color-bg:                    #0b5230;
+  --color-bg-alt:                #083d22;
+  --color-bg-surface:            #0f6338;
+  --color-bg-surface-hover:      rgba(245, 237, 215, 0.06);
+  --color-bg-surface-highlight:  rgba(200, 158, 60, 0.10);
+  --color-bg-preview:            rgba(245, 237, 215, 0.05);
 
-  /* Emerald Green — acento principal */
-  --color-accent:                #126237;
-  --color-accent-hover:          #0d4b2a;
-  --color-accent-focus:          rgba(18, 98, 55, 0.13);
+  /* Dourado — acento principal */
+  --color-accent:                #c89e3c;
+  --color-accent-hover:          #a07a28;
+  --color-accent-focus:          rgba(200, 158, 60, 0.18);
 
-  /* Noir de Vigne — texto */
-  --color-text:                  #1a1108;
-  /* Wasabi — texto secundário/muted */
-  --color-text-muted:            #7a7a46;
+  /* Creme — texto */
+  --color-text:                  #f5edcf;
+  /* Creme muted — texto secundário */
+  --color-text-muted:            #b0a882;
 
-  /* Bordas khaki */
-  --color-border:                #d6c9ad;
-  --color-border-highlight:      rgba(18, 98, 55, 0.30);
-  --color-border-hover:          rgba(18, 98, 55, 0.30);
-  --color-border-preview:        rgba(18, 98, 55, 0.13);
+  /* Bordas verdes */
+  --color-border:                #1a7045;
+  --color-border-highlight:      rgba(200, 158, 60, 0.40);
+  --color-border-hover:          rgba(200, 158, 60, 0.40);
+  --color-border-preview:        rgba(200, 158, 60, 0.20);
 
-  /* Egyptian Earth — erro/destaque quente */
-  --color-error:                 #9e4e22;
+  /* Egyptian Earth — erro e detalhes quentes */
+  --color-error:                 #c4652a;
 
   --font-display:                'Plus Jakarta Sans', system-ui, sans-serif;
   --font-body:                   'Plus Jakarta Sans', system-ui, sans-serif;
@@ -40,20 +40,43 @@
   --radius:                      8px;
 }
 
-/* Personalidade minimal: overlay khaki, elementos arredondados */
+/* Hero: overlay escuro sobre foto */
 .hero__overlay {
   background: linear-gradient(160deg,
-    rgba(245, 237, 223, 0.94) 0%,
-    rgba(245, 237, 223, 0.62) 50%,
-    rgba(245, 237, 223, 0.97) 100%);
+    rgba(8, 61, 34, 0.92) 0%,
+    rgba(8, 61, 34, 0.60) 55%,
+    rgba(8, 61, 34, 0.95) 100%);
 }
+
+/* Headline accent em dourado */
+.hero__headline em         { color: #c89e3c; font-style: normal; font-weight: 800; }
 .hero__headline span       { color: var(--color-text); }
-.hero__headline em         { color: var(--color-accent); font-style: normal; font-weight: 800; }
+
+/* Nav sempre visível com creme */
 .nav__brand                { color: var(--color-text); }
-.section-label             { font-weight: 600; font-size: 0.75rem; }
-.service-card__name        { font-weight: 700; }
+.nav__tagline              { color: #c89e3c; }
+
+/* Botão primário: dourado sobre verde */
+.btn--primary              { background: #c89e3c; color: #083d22; }
+.btn--primary:hover        { background: #a07a28; }
+
+/* Botão ghost: borda creme */
+.btn--ghost                { border-color: rgba(245, 237, 207, 0.35); color: var(--color-text); }
+.btn--ghost:hover          { border-color: #c89e3c; color: #c89e3c; }
+
+/* Badge dos serviços em egyptian earth */
+.service-card__badge       { background: #c4652a; color: #f5edcf; border-radius: 12px; }
+
+/* Detalhe egyptian earth no ícone de problema */
+.ps-card--problem .ps-card__icon { color: #c4652a; }
+
+/* Tipografia "AGENDA" no fundo com wasabi */
+.cta-final-section::before { color: #8a8c3a; opacity: 0.08; }
+
+/* Arredondamento */
 .btn                       { border-radius: 24px; }
 .service-card              { border-radius: 12px; }
 .booking-form              { border-radius: 16px; }
 .testimonial-card          { border-radius: 12px; }
-.service-card__badge       { border-radius: 12px; }
+.section-label             { font-weight: 600; font-size: 0.75rem; }
+.service-card__name        { font-weight: 700; }
